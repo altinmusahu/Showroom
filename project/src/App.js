@@ -1,14 +1,13 @@
-import Header from "./components/Header/Header";
 import Home from "./components/Home/Home";
+import Section from "./components/Home/Section";
 
 function App() {
   return (
     <>
-    <header>
-        <Header />
-    </header>
+
     <main>
         <Home />
+        <Section />
     </main>
     </>
   );
