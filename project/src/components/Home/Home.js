@@ -8,6 +8,7 @@ import leaf from "../../assets/leaf.png";
 import plant from "../../assets/plant.png";
 import tree from "../../assets/tree.png";
 
+
 export default function Home() {
     const [scrollY, setScrollY] = useState(0);
     
@@ -26,17 +27,16 @@ export default function Home() {
         <div className="relative h-screen overflow-hidden bg-gray-100">
             {/* Parallax elements */}
             <img className="absolute inset-0 w-full h-full object-cover pointer-events-none" style={{ top: `${scrollY * 1.5}px` }} src={hill1} alt="hill1"/>
-            <img className="absolute inset-0 w-full h-full object-cover pointer-events-none" style={{ top: `${scrollY * 1.5}px` }} src={hill2} alt="hill2"/>
-            <img className="absolute inset-0 w-full h-full object-cover pointer-events-none" style={{ top: `${scrollY * 1.5}px` }} src={hill3} alt="hill3"/>
-            <img className="absolute inset-0 w-full h-full object-cover pointer-events-none" style={{ top: `${scrollY * 1.5}px` }} src={hill4} alt="hill4"/>
-            <img className="absolute inset-0 w-full h-full object-cover pointer-events-none" style={{ top: `${scrollY * 1.5}px` }} src={hill5} alt="hill5"/>
-            <img className="absolute inset-0 w-full h-full object-cover pointer-events-none" style={{ top: `${scrollY * 1.5}px` }} src={tree} alt="tree"/>
-            <img className="absolute inset-0 w-full h-full object-cover pointer-events-none" src={leaf} alt="leaf"/>
+            <img className="absolute inset-0 w-full h-full object-cover pointer-events-none" src={hill2} alt="hill2"/>
+            <img className="absolute inset-0 w-full h-full object-cover pointer-events-none" src={hill3} alt="hill3"/>
+            <img className="absolute inset-0 w-full h-full object-cover pointer-events-none" style={{ left: `${scrollY * -1.5}px` }} src={hill4} alt="hill4"/>
+            <img className="absolute inset-0 w-full h-full object-cover pointer-events-none" style={{ left: `${scrollY * 1.5}px` }} src={hill5} alt="hill5"/>
+            <img className="absolute inset-0 w-full h-full object-cover pointer-events-none" src={tree} alt="tree"/>
+            <img className="absolute inset-0 w-full h-full object-cover pointer-events-none" style={{ left: `${scrollY * 1.5}px` }} src={leaf} alt="leaf"/>
             <img className="absolute w-full inset-0 h-full object-cover pointer-events-none" style={{ bottom: `${scrollY * 1.5}px` }} src={plant} alt="plant"/>
 
-            {/* Content */}
             <div className="absolute top-0 left-0 w-full h-full flex flex-col justify-center items-center pointer-events-none">
-                <h2 className="text-5xl font-bold text-gray-800 pointer-events-none " >Parallax Website</h2>
+                <h2 className="text-7xl font-bold text-white pointer-events-none " style={{ transform: `translateY(${scrollY * 1}px)` }} >Animation Website</h2>
             </div>
         </div>
     );

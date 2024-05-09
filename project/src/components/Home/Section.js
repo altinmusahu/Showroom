@@ -3,8 +3,8 @@ export default function Section() {
 
         
 
-        <div className="relative p-24"> 
-            <h2 className="mb-2">Parallax Scrolling Website</h2>
+        <div className="relative p-24 text-white" style={{backgroundColor: '#003329'}}> 
+            <h2 className="mb-8 text-3xl ">Parallax Scrolling Website</h2>
             <p>
                 Lorem Ipsum is simply dummy text of the printing and
                  typesetting industry. Lorem Ipsum has been the 
