@@ -108,67 +108,6 @@ export default function MapContent() {
         </div>
       </div>
     </div>
-
-    <section className="min-h-screen">
-      <div className="bg-white">
-        <div className="flex flex-wrap justify-center">
-          <div className="w-full lg:w-1/2 flex justify-center">
-            <div className="bg-white flex min-h-screen justify-center">
-              <div className="flex flex-col w-[80%] mt-28">
-                <h2 className="text-5xl text-[#003164] radio-canada-big-unique1">
-                  Message Us
-                </h2>
-                <p className="mt-8 text-gray-400">
-                  If you wish to be considered for employment at Weifield, please do not send a message, here – instead, please complete Weifield’s job application and our Human Resources department will contact you after their review of your submitted information.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div className="w-full lg:w-1/3 flex items-center">
-            <div className="bg-white p-12 rounded shadow-lg w-full">
-              <form id="contact-form" method="POST" className="relative space-y-6">
-                <input type="hidden" name="form-name" value="contactForm" />
-                <div className="form-group">
-                  <input
-                    type="text"
-                    name="name"
-                    className="w-full border-b-2 border-gray-200 p-2 text-lg placeholder-black focus:border-[#003164] focus:outline-none"
-                    id="first-name"
-                    placeholder="Enter Your Name *"
-                    required
-                  />
-                </div>
-                <div className="form-group">
-                  <input
-                    type="email"
-                    name="email"
-                    className="w-full border-b-2 border-gray-200 p-2 text-lg placeholder-black focus:border-[#003164] focus:outline-none"
-                    id="email"
-                    placeholder="Enter Your Email *"
-                    required
-                  />
-                </div>
-                <div className="form-group">
-                  <textarea
-                    rows="4"
-                    name="message"
-                    className="w-full border-b-2 border-gray-200 p-2 text-lg placeholder-black focus:border-[#003164] focus:outline-none"
-                    id="description"
-                    placeholder="Enter Your Message *"
-                    required
-                  ></textarea>
-                </div>
-                <div>
-                  <button onClick={handleClick} className="btn-big btn bg-[#003164] text-white py-2 px-4 rounded hover:bg-[#273854]">
-                    Send Us <i className="fas fa-arrow-right"></i>
-                  </button>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
   </div>
 </div>
 );

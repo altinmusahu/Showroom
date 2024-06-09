@@ -90,7 +90,7 @@ const PixiBackground = () => {
       });
 
       // Add bouncing text
-      const text = new PIXI.Text('Welcome to Weifield Group Contracting', {
+      const text = new PIXI.Text('Welcome to Animated Website', {
         fontFamily: 'Arial',
         fontSize: 36,
         fill: 0xffffff,
